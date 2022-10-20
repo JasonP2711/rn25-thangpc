@@ -1,42 +1,44 @@
-import React, { Component } from 'react'
-import * as Icons_button from "react-icons/ai";
-type Props = {
-    
-}
+import React, { useState } from "react";
+import * as faIcon from "react-icons/fa";
+function index() {
+  const starDefault = {
+    display: "inline",
+    fontSize: "24px",
+    margin: "4px",
+    marginRight: "8px",
+    cursor: "pointer",
+    // color: "yellow",
+  };
+  const starSelect = {
+    display: "inline",
+    fontSize: "24px",
+    margin: "4px",
+    marginRight: "8px",
+    cursor: "pointer",
+    color: "yellow",
+  };
 
-interface IState {
-    star1: boolean,
-    star2: boolean,
-    star3: boolean,
-    star4: boolean,
-    star5: boolean,
-}
-
-class Rating_star extends Component<Props, IState> {
-  const star = Array(5).fill(0);
-
-  constructor(props: Props){
-    super(props)
-    this.state = {star1:false ,star2:false,star3:false,star4:false,star5:false}
+  const [star, setStar] = useState(0);
+  const starIcon: JSX.Element[] = [];
+  for (let index = 1; index <= 5; index++) {
+    starIcon.push(
+      <faIcon.FaStar
+        onClick={() => {
+          setStar(index);
+        }}
+        style={index <= star ? starSelect : starDefault}
+      />
+    );
   }
 
-  star_choose = () =>{
-    let i;
-    if(star)
-  }
-
-  render() {
-    return (
-        <>
-            <div>{}</div>
-            <input type="radio" onClick={this.star_choose}/>
-            <input type="radio"/>
-            <input type="radio"/>
-            <input type="radio"/>
-            <input type="radio"/>
-        </>
-    )
-  }
+  return (
+    <>
+      <div className="rating inline-block m-2 border border-black">
+        {starIcon}
+        <p>{star}</p>
+      </div>
+    </>
+  );
 }
 
-export default Rating_star
+export default index;
