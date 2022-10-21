@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 
 import Basic01 from "./components/HomeWork02/Basic01/Basic01";
 import Basic02 from "./components/HomeWork02/Basic02/Basic02";
 import Basic03 from "./components/HomeWork02/Basic03/Basic03";
-import imagebasic from "./1.jpg";
-import imagebasic2 from "./2.jpg";
+// import imagebasic from "./1.jpg";
+// import imagebasic2 from "./2.jpg";
 import Index from "./components/HomeWork02/Basic-ui-1/Index";
 import Index_ui2 from "./components/HomeWork02/Basic-ui-2/Index_ui2";
 import * as reactStyle from 'react-icons/ai';
@@ -18,10 +18,11 @@ import Alth1 from "./components/Giai_thuat/Alth1";
 import Index_ex from "./components/Exp_userEffect/Index";
 import Index_like from "./components/Exp_userEffect/Index_like";
 import Like_Button from "./components/HomeWork03/LikeButton/LikeButton";
-import Rating_star from "./components/HomeWork03/Rating_star/Rating_star";
+
 import ImageView from "./components/HomeWork03/ImageView/ImageView";
 import * as Style_icon from "react-icons/gr";
-
+import Rating_star from "./components/HomeWork03/Rating_star/Rating_star";
+import ListUser from "./components/Exp_networking/ListUser";
 function App() {
   // let myIcons = <reactStyle.Fa500Px />;
   let isLike = false;
@@ -61,7 +62,9 @@ function App() {
          {/* <Index_like /> */}
          {/* <Like_Button icon_like={<Icons_button.AiFillLike/>} icon_dislike={<Icons_button.AiOutlineDislike/>} /> */}
          {/* <Rating_star /> */}
-         <ImageView icon_next={<Style_icon.GrCaretNext/>} icon_privious={<Style_icon.GrCaretPrevious/>} />
+         {/* <ImageView icon_next={<Style_icon.GrCaretNext/>} icon_privious={<Style_icon.GrCaretPrevious/>} /> */}
+         {/* <Rating_star /> */}
+         <ListUser/>
     </>
   );
 }
