@@ -23,6 +23,11 @@ import ImageView from "./components/HomeWork03/ImageView/ImageView";
 import * as Style_icon from "react-icons/gr";
 import Rating_star from "./components/HomeWork03/Rating_star/Rating_star";
 import ListUser from "./components/Exp_networking/ListUser";
+import HomeWork07 from "./components/HomeWork07/HomeWork07";
+import Detail from "./components/RouterExp/RouterEx1";
+// import ComponentList from './components/RouterExp/ComponentList';
+import BaitapCuoiMon1 from "./components/BaiTapCuoiMon/BaitapCuoiMon1";
+
 function App() {
   // let myIcons = <reactStyle.Fa500Px />;
   let isLike = false;
@@ -64,7 +69,12 @@ function App() {
          {/* <Rating_star /> */}
          {/* <ImageView icon_next={<Style_icon.GrCaretNext/>} icon_privious={<Style_icon.GrCaretPrevious/>} /> */}
          {/* <Rating_star /> */}
-         <ListUser/>
+         {/* <ListUser/> */}
+         {/* <HomeWork07/> */}
+
+         <BaitapCuoiMon1 />
+
+
     </>
   );
 }

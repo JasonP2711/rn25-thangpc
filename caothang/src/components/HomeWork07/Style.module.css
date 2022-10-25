@@ -1,0 +1,71 @@
+
+.container{
+    margin-top: 60px;
+    margin-left: 450px;
+    width: 660px;
+    height: 560px;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header_part{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.email{
+    float: left;
+    width: 300px;
+    height: 100px;
+
+}
+.password{
+    margin-left: 10px;
+    float: left;
+    width: 300px;
+    height: 100px;
+    
+}
+
+.Add1{
+    width: 400px;
+    position: absolute;
+    top: 150px;
+}
+
+.Add2{
+    position: absolute;
+    top: 200px;
+}
+
+.City{
+    width: 400px;
+    position: absolute;
+    top: 250px;
+}
+
+.District{
+    width: 400px;
+    position: absolute;
+    top: 300px;
+}
+
+.Commune{
+    width: 400px;
+    position: absolute;
+    top: 350px;
+}
+
+.check{
+    width: 400px;
+    position: absolute;
+    top: 400px;
+}
+
+.submit{
+    
+    position: absolute;
+    top: 410px;
+}
